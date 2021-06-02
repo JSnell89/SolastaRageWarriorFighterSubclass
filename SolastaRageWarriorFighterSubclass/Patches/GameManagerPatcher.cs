@@ -1,6 +1,6 @@
 using HarmonyLib;
 
-namespace SolastaTacticianSubclass.Patches
+namespace SolastaRageWarriorFighterSubclass.Patches
 {
     class GameManagerPatcher
     {

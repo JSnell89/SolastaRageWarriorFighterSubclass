@@ -1,0 +1,14 @@
+Subclass/&RageWarriorFighterSubclassTitle Rage Warrior
+Subclass/&RageWarriorFighterSubclassDescription The Rage Warrior uses their primal fury to shrug off blows of their opponents.  They can enter a rage once per short rest as well as attack recklessly.
+Feature/&RageClassPowerTitle Rage
+Feature/&RageClassPowerDescription You get one rage per short rest.  As a bonus action you can enter a rage for one minute and gain the following: Advantage on Strength checks and Strength saving throws, a bonus to damage rolls of +2, and resistance to bludgeoning, piercing, and slashing damage.
+Feature/&RageClassConditionTitle	Raging
+Feature/&RageClassConditionDescription While in a rage you gain the following: Advantage on Strength checks and Strength saving throws, a bonus to damage rolls of +2, and resistance to bludgeoning, piercing, and slashing damage.
+Feature/&RageClassStrengthSavingThrowAffinityTitle Rage strength save advantage
+Feature/&RageClassStrengthSavingThrowAffinityDescription You get advantage on strength saves while raging
+Feature/&RageClassDamageBonusAttackModifierTitle Rage damage
+Feature/&RageClassDamageBonusAttackModifierDescription Add +2 damage to your attacks while raging.
+Feature/&FastMovementMovementAffinityTitle Fast movement
+Feature/&FastMovementMovementAffinityDescription Your speed increases by 10 feet
+Feature/&FastMovementMovementAffinityTitle Fast movement
+Feature/&FastMovementMovementAffinityDescription Your speed increases by 10 feet

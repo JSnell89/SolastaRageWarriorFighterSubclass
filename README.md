@@ -1,4 +1,4 @@
-# SolastaTacticianSubclass
+# SolastaRageWarriorFighterSubclass
 
 My Mod Description
 

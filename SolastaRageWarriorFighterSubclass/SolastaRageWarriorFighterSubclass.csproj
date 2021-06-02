@@ -5,8 +5,8 @@
 		<AssemblyVersion>0.0.2.0</AssemblyVersion>
 		<FileVersion>0.0.2.0</FileVersion>
 		<Description></Description>
-		<PackageProjectUrl>https://github.com/jsnell89/SolastaTacticianSubclass</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/jsnell89/SolastaTacticianSubclass</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/jsnell89/SolastaRageWarriorFighterSubclass</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/jsnell89/SolastaRageWarriorFighterSubclass</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<Configurations>Debug;Release;Debug Install;Release Install</Configurations>
 		<Authors>Acehigh</Authors>
@@ -14,7 +14,7 @@
 		<Product />
 		<Copyright>Copyright � 2020</Copyright>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<Version>0.0.2</Version>
+		<Version>0.0.1</Version>
 	</PropertyGroup>
 
 	<Target Name="CheckEnvironmentVars">
@@ -22,7 +22,7 @@
 	</Target>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Install|AnyCPU' Or '$(Configuration)|$(Platform)' == 'Release Install|AnyCPU'">
-		<OutputPath>$(SolastaInstallDir)\Mods\SolastaTacticianSubclass\</OutputPath>
+		<OutputPath>$(SolastaInstallDir)\Mods\SolastaRageWarriorFighterSubclass\</OutputPath>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 	</PropertyGroup>

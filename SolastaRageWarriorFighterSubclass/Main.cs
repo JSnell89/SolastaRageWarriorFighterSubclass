@@ -7,10 +7,10 @@ using HarmonyLib;
 using I2.Loc;
 using SolastaModApi;
 using SolastaModApi.Extensions;
-using SolastaTacticianSubclass;
+using SolastaRageWarriorFighterSubclass;
 using System.Collections.Generic;
 
-namespace SolastaTacticianSubclass
+namespace SolastaRageWarriorFighterSubclass
 {
     public class Main
     {
@@ -22,12 +22,12 @@ namespace SolastaTacticianSubclass
 
         internal static void LoadTranslations()
         {
-            DirectoryInfo directoryInfo = new DirectoryInfo($@"{UnityModManager.modsPath}/SolastaTacticianSubclass");
+            DirectoryInfo directoryInfo = new DirectoryInfo($@"{UnityModManager.modsPath}/SolastaRageWarriorFighterSubclass");
             FileInfo[] files = directoryInfo.GetFiles($"Translations-??.txt");
 
             foreach (var file in files)
             {
-                var filename = $@"{UnityModManager.modsPath}/SolastaTacticianSubclass/{file.Name}";
+                var filename = $@"{UnityModManager.modsPath}/SolastaRageWarriorFighterSubclass/{file.Name}";
                 var code = file.Name.Substring(13, 2);
                 var languageSourceData = LocalizationManager.Sources[0];
                 var languageIndex = languageSourceData.GetLanguageIndexFromCode(code);
@@ -70,21 +70,8 @@ namespace SolastaTacticianSubclass
         }
 
         internal static void ModEntryPoint()
-        {   
-            TacticianFighterSubclassBuilder.BuildAndAddSubclass();
-        }
-
-        //Testing code
-        public static class FighterBuilder
         {
-            public static void Load()
-            {
-                var features = new List<FeatureUnlockByLevel> {
-                    new FeatureUnlockByLevel(DatabaseHelper.FeatureDefinitionPowers.PowerReckless, 1),
-                };
-
-                DatabaseHelper.CharacterClassDefinitions.Fighter.FeatureUnlocks.AddRange(features);
-            }
+            SolastaRageWarriorFighterSubclass.BuildAndAddSubclass();
         }
     }
 }

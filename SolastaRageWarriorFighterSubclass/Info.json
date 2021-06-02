@@ -1,0 +1,13 @@
+{
+	"Id": "SolastaRageWarriorFighterSubclass",
+	"DisplayName": "SolastaRageWarriorFighterSubclass",
+	"Author": "jsnell89",
+	"Version": "0.0.1",
+	"ManagerVersion": "0.23.4",
+	"Requirements": [ "SolastaModApi" ],
+	"LoadAfter": [ "SolastaModApi" ],
+	"AssemblyName": "SolastaRageWarriorFighterSubclass.dll",
+	"EntryMethod": "SolastaRageWarriorFighterSubclass.Main.Load",
+	"Repository": "https://raw.githubusercontent.com/jsnell89/SolastaRageWarriorFighterSubclass/main/SolastaRageWarriorFighterSubclass/Repository.json",
+	"HomePage": "https://www.nexusmods.com/solastacrownofthemagister/mods/88"
+}
