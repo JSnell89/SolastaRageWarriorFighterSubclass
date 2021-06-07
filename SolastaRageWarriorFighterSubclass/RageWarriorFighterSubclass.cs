@@ -47,8 +47,7 @@ namespace SolastaRageWarriorFighterSubclass
         public static FeatureDefinitionMovementAffinity CreateAndAddToDB(string name, string guid)
             => new FastMovementMovementAffinityBuilder(name, guid).AddToDB();
 
-        public static FeatureDefinitionMovementAffinity FastMovementMovementAffinity
-            => CreateAndAddToDB(FastMovementMovementAffinityName, FastMovementMovementAffinityNameGuid);
+        public static FeatureDefinitionMovementAffinity FastMovementMovementAffinity = CreateAndAddToDB(FastMovementMovementAffinityName, FastMovementMovementAffinityNameGuid);
     }
 
     internal class FastMovementMovementPowerForLevelUpDescriptionBuilder : BaseDefinitionBuilder<FeatureDefinitionPower>
@@ -72,8 +71,7 @@ namespace SolastaRageWarriorFighterSubclass
         public static FeatureDefinitionPower CreateAndAddToDB(string name, string guid)
             => new FastMovementMovementPowerForLevelUpDescriptionBuilder(name, guid).AddToDB();
 
-        public static FeatureDefinitionPower FastMovementMovementPowerForLevelUpDescription
-            => CreateAndAddToDB(FastMovementMovementAffinityName, FastMovementMovementAffinityNameGuid);
+        public static FeatureDefinitionPower FastMovementMovementPowerForLevelUpDescription = CreateAndAddToDB(FastMovementMovementAffinityName, FastMovementMovementAffinityNameGuid);
     }
 
     internal class RageClassPowerBuilder : BaseDefinitionBuilder<FeatureDefinitionPower>
@@ -117,8 +115,7 @@ namespace SolastaRageWarriorFighterSubclass
         public static FeatureDefinitionPower CreateAndAddToDB(string name, string guid)
             => new RageClassPowerBuilder(name, guid).AddToDB();
 
-        public static FeatureDefinitionPower RageClassPower
-            => CreateAndAddToDB(RageClassPowerName, RageClassPowerNameGuid);
+        public static FeatureDefinitionPower RageClassPower = CreateAndAddToDB(RageClassPowerName, RageClassPowerNameGuid);
     }
 
     internal class RageClassConditionBuilder : BaseDefinitionBuilder<ConditionDefinition>
@@ -149,8 +146,7 @@ namespace SolastaRageWarriorFighterSubclass
         public static ConditionDefinition CreateAndAddToDB(string name, string guid)
             => new RageClassConditionBuilder(name, guid).AddToDB();
 
-        public static ConditionDefinition RageClassCondition
-            => CreateAndAddToDB(RageClassConditionName, RageClassConditionNameGuid);
+        public static ConditionDefinition RageClassCondition = CreateAndAddToDB(RageClassConditionName, RageClassConditionNameGuid);
     }
 
     internal class RageClassStrengthSavingThrowAffinityBuilder : BaseDefinitionBuilder<FeatureDefinitionSavingThrowAffinity>
@@ -167,13 +163,13 @@ namespace SolastaRageWarriorFighterSubclass
             var strengthSaveAffinityGroup = new SavingThrowAffinityGroup();
             strengthSaveAffinityGroup.affinity = RuleDefinitions.CharacterSavingThrowAffinity.Advantage;
             strengthSaveAffinityGroup.abilityScoreName = "Strength";
+            Definition.AffinityGroups.Add(strengthSaveAffinityGroup);
         }
 
         public static FeatureDefinitionSavingThrowAffinity CreateAndAddToDB(string name, string guid)
             => new RageClassStrengthSavingThrowAffinityBuilder(name, guid).AddToDB();
 
-        public static FeatureDefinitionSavingThrowAffinity RageClassStrengthSavingThrowAffinity
-            => CreateAndAddToDB(RageClassStrengthSavingThrowAffinityName, RageClassStrengthSavingThrowAffinityNameGuid);
+        public static FeatureDefinitionSavingThrowAffinity RageClassStrengthSavingThrowAffinity = CreateAndAddToDB(RageClassStrengthSavingThrowAffinityName, RageClassStrengthSavingThrowAffinityNameGuid);
     }
 
     internal class RageClassDamageBonusAttackModifierBuilder : BaseDefinitionBuilder<FeatureDefinitionAttackModifier>
@@ -193,7 +189,6 @@ namespace SolastaRageWarriorFighterSubclass
         public static FeatureDefinitionAttackModifier CreateAndAddToDB(string name, string guid)
             => new RageClassDamageBonusAttackModifierBuilder(name, guid).AddToDB();
 
-        public static FeatureDefinitionAttackModifier RageClassDamageBonusAttackModifier
-            => CreateAndAddToDB(RageClassDamageBonusAttackModifierName, RageClassDamageBonusAttackModifierNameGuid);
+        public static FeatureDefinitionAttackModifier RageClassDamageBonusAttackModifier = CreateAndAddToDB(RageClassDamageBonusAttackModifierName, RageClassDamageBonusAttackModifierNameGuid);
     }
 }

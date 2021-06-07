@@ -50,7 +50,7 @@ namespace SolastaRageWarriorFighterSubclass
         }
 
         internal static bool Load(UnityModManager.ModEntry modEntry)
-        {
+        {   
             try
             {
                 Logger = modEntry.Logger;
